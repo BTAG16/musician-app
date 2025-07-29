@@ -16,7 +16,7 @@ router.get('/all', (req, res) => {
     if (err) {
       res.status('400').send({errorMessage: err});
     }
-    res.status('200').send(returnedMusicians);
+    res.status(200).send(returnedMusicians);
   });
 });
 
